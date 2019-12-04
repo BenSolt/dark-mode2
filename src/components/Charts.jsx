@@ -2,6 +2,11 @@ import React from "react";
 import Chart from "./Chart";
 
 const Charts = ({ coinData1 }) => {
+
+    // const coinBit = coinData1.filter(str => (str.id === "bitcoin"))
+    // const coinEth = coinData1.filter(str => (str.id === "ethereum"))
+    // const coinXpr = coinData1.filter(str => (str.id === "xpr"))
+
   return (
     <div className="charts">
       {coinData1.map(coin => (
