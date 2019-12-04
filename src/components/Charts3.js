@@ -3,12 +3,12 @@ import Chart from "./Chart";
 
 import axios from "axios";
 
-const Charts2 = ({ }) => {
+const Charts3 = ({ }) => {
 
     const [coinData, setCoinData] = useState([]);
     // const coinBit = coinData1.filter(str => (str.id === "bitcoin"))
-    const coinEth = coinData.filter(str => (str.id === "ethereum"))
-    // const coinXpr = coinData1.filter(str => (str.id === "xpr"))
+    // const coinEth = coinData2.filter(str => (str.id === "ethereum"))
+    const coinXpr = coinData.filter(str => (str.id === "ripple"))
 
 
     useEffect(() => {
@@ -27,7 +27,7 @@ const Charts2 = ({ }) => {
 
   return (
     <div className="charts">
-      {coinEth.map(coin => (
+      {coinXpr.map(coin => (
         <div className="chart__container" key={coin.name}>
           <h2 className="coin__title">{coin.name}</h2>
           <h4 className="coin__symbol">{coin.symbol}</h4>
@@ -40,4 +40,4 @@ const Charts2 = ({ }) => {
     </div>
   );
 };
-export default Charts2;
+export default Charts3;

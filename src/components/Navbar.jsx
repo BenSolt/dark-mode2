@@ -12,9 +12,9 @@ const Navbar = () => {
     <nav className="navbar">
       <h1>Crypto Tracker</h1>
 
-      <NavLink className='navlink' to='/'>COIN1</NavLink>
+      <NavLink className='navlink' to='/'>BitCoin</NavLink>
       <NavLink className='navlink' to='/ether'>Ether</NavLink>
-      <NavLink className='navlink' to='/ether'>COIN3</NavLink>
+      <NavLink className='navlink' to='/xrp'>XRP</NavLink>
 
       <div className="dark-mode__toggle">
         <div
